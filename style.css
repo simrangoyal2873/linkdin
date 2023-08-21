@@ -742,9 +742,9 @@ nav a:hover::after{
     margin-left: -27px;
     /* padding-left: 2px;
     padding-right: 3px; */
-    /* }
-    /* #search{
-        width: 165px; */
+    /}
+ #search{
+        width: 165px; 
     }
      .navbar button:not(:disabled){
         cursor: pointer;
