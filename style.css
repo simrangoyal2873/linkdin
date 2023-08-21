@@ -737,6 +737,26 @@ nav a:hover::after{
 
 /* responsible----------------------------------------- */
 @media only screen and (max-width: 600px ){
+   .navbar #form {
+        /* cursor: pointer; */
+    /* width: 42px;
+    height: 38px; */
+    margin-left: -27px;
+    /* padding-left: 2px;
+    padding-right: 3px; */
+    }
+    #search{
+        width: 165px;
+    }
+    button:not(:disabled){
+        cursor: pointer;
+        width: 42px;
+        height: 38px;
+        margin-left: -27px;
+        padding-left: 2px;
+        padding-right: 3px;
+
+    }
     .container{
         padding: 15px 3%;
     }
