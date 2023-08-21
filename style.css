@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.nav-link{
+    transition: all 0.3s;
+
+}
+.nav-link:hover{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid blue;
+
+}
+
+body{
+    background-color:f0f2f5;
+    color: #5f5f5f;
+}
+
+a{
+    text-decoration: none;
+    margin-left:23px ;
+    position: relative;
+    /* color: #5f5f5f; */
+
+}
+a::after{
+    content:'';
+    width: 0;
+    height: 1px;
+    bottom: -8px;
+    position: absolute;
+    /* background: blue; */
+    /* transition: width 0.3s; */
+
+
+}
+.img{
+    width: 28px;
+    height: 28px;
+    margin-right: 14px;
+
+}
+
+/* .img1{
+    width: 28px;
+    height: 28px;
+    margin-right: 14px;
+    border: 2px solid red;
+} */
+#lin{
+    margin-left: 100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+#meri{
+    height: 43px;
+    width: 43px;
+    border-radius: 24px;
+}
+.online{
+    position: relative;
+
+}
+.online::after{
+    content: ' ';
+    position: absolute;
+    border: 2px solid white;
+    background: #1c5b3c;;
+    width: 12px;
+    height: 12px;
+    border-radius: 36px;
+    right: 0px;
+    top: 0px;
+}
+nav a:hover::after{
+    width:100%;
+  
+}
+#search{
+    border-radius: 30px;
+}
+.container{
+    background-color: white;
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profilemenuwrap{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0px;
+    transition: max-height0.5s;
+    overflow: hidden;
+}
+.profilemenuwrap.open-menu{
+    max-height: 400px;
+}
+
+.profilemenu{
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+     
+}
+.userinfo{
+    display: flex;
+    align-items: center;
+}
+.userinfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.userinfo h3{
+   font-weight: 500;
+   font-size: 22px;
+    margin-bottom: -4px;
+}
+.userinfo a{
+    color: #c9dbf8;
+    font-size: 13px;
+    margin-left: -0.9px;
+    text-decoration: none;
+}
+.profilemenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0 10px;
+
+}
+.profilemenulink{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 12px 0;
+    font-size: 14px;
+}
+.feed{
+    width: 32px;
+    height: 29px;
+    border-radius: 50%;
+}
+.profilemenu p{
+    width: 100%;
+    padding-top: 11px;
+    margin-left: 9px;
+}
+.profilemenu a{
+    text-decoration: none;
+
+}
+
+    
+
+
+
+/* ----------------------------------------------------------------- */
+.leftside{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+    /* border: 2px solid red; */
+}
+.profile-box{
+    background: #fffbf9;
+}
+.profileinfo{
+    padding: 0 25px;
+}
+.profileinfo img{
+    height: 90px;
+    width: 90px;
+    background:  #fffbf9;
+    border-radius: 50%;
+    padding: 4px;
+    margin-top: -45px;
+}
+.profileinfo h1{
+    font-size: 25px;
+    font-weight: 630;
+    color:  #222;
+}
+.profileinfo h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fffbf9;
+
+}
+.profileinfo ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.profileinfo ul li{ 
+    margin: 5px 0;
+    font-size: 13px;
+    width: 100%;
+}
+.profileinfo ul li span{
+    float: right;
+    color: #045be6;
+}
+.item{
+    width: 25px;
+    height: 25px;
+}
+.profile-link{
+    /* border: 1px solid #ccc; */
+    align-items: center;
+    display: flex;
+}
+.profile-link a{
+    text-decoration: none;
+    flex-basis: 50%;
+    display: flex;
+    /* border-left: 1px solid white; */
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+/* .profile-link a:first-child{
+    border-left: 0;
+}*/
+.profile-link a img{
+    width: 25px;
+    margin-right: 10px;
+} 
+.activitysidebar{
+    background: #fffbf9;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+.activitysidebar h3{
+    color: #777;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.activitysidebar a{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #888;
+    font-size: 13px;
+    font-weight: 500;
+    margin: -5px 0;
+}
+.items{
+    width:40px ;
+    height: 40px;
+}
+.discover{
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.discover a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #045be6;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.center{
+    flex-basis: 47%;
+    /* border: 2px solid red; */
+    margin-top: 39px;
+}
+.post{
+    background:  #fffbf9;
+}
+.createpost{
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+
+}
+.createpost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.createpost textarea{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    resize: none;
+    margin-top: 8px;
+    background: transparent;
+}
+::placeholder{
+    font-weight: 500;
+}
+.createlinks img{
+    width: 30px;
+    /* height: 20px; */
+}
+.createlinks {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+}
+.createlinks li{
+    flex-basis: 25%;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.createlinks li:last-child{
+    border-top: 0;
+    border-right: 0;
+    background: #045be6;
+    color: #fff;
+
+}
+.sortby img{
+    width: 20px;
+}
+.sortby{
+    align-items: center;
+    margin: 10px 0;
+    display: flex;
+}
+.sortby hr{
+    flex: 1;
+    height: 2px;
+    border: 0;
+    background: #ccc;
+}
+.sortby p{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.sortby p span{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pp{
+    background: #fffbf9;
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+}
+.postauthor{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+.postauthor img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+.postauthor h1{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.postauthor small{
+    /* color: #ccc; */
+    display: block;
+    margin-bottom: -2px;
+
+}
+.pp p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.status{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 6px;
+}
+.rr {
+    float: right;
+}
+.status img{
+    width: 15px;
+    margin-right: -5px;
+}
+.likedby{
+    margin-left: 14px;
+    /* padding: 2px; */
+    /* float: right; */
+
+}
+.status div{
+    display: flex;
+    align-items: center;
+}
+.postactivity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.postactivity div{
+    display: flex;
+    align-items: center;
+}
+.activityicon{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.activityarrowicon{
+    width: 12px;
+    margin-left: 5px;
+}
+.linksicon img{
+    width:  18px;
+    margin-right: 8px;
+
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* .container{
+    position: relative;
+} */
+.rightside{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+    /* border: 2px solid red; */
+}
+.rightsidenews{
+    background: #fffbf9;
+    padding: 10px 25px;
+}
+.info-icon{
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-top: 15px;
+}
+
+.rightsidenews h1{
+    font-size: 25px;
+    font-weight: 630;
+    
+    margin: 10px 0 30px;
+}
+.rightsidenews a{
+    margin-left: 1px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.rightsidenews span{
+    font-size: 12px;
+  /* margin-left: 20px; */
+}
+.rightsidenews .read-more{
+    color: blue;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+.rightad{
+    background: #fffbf9;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.rightad img{
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    border-radius: 50%;
+}
+.rightad small{
+    float: right;
+    /* margin: 10px 10px; */
+    font-size: 500;
+}
+.rightad p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.rightad a{
+    display: block;
+}
+.rightad a button{
+    text-align: center;
+    color: blue ;
+    border: 1.5px solid blue;
+    margin: 20px auto 10px;
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+.rightsidelinks {
+    /* padding: 15px 25px; */
+    /* text-align: center; */
+}
+
+.rightsidelinks a{
+    color: black;
+    /* font-weight: 500; */
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 7px;
+
+
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.copyright img{
+    width: 20px;
+    height:18px ;
+    margin-right: 4px;
+}
+.copyright p{
+    margin-bottom: 0rem;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+.profilemain{
+    flex-basis: 73%;
+    margin-top: 63px;
+    border-radius: 5px;
+}
+.profilesidebar{
+    flex-basis: 25%;
+    align-items: flex-start;
+    position: sticky;
+    /* top: 73px; */
+    margin-top: 50px;
+}
+.profilecontainer{
+    background:  #fffbf9;
+
+}
+.profilecontainerinner{
+    padding:  0 4% 10px;
+
+}
+.profilecontainer a{
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.profilepic{
+    margin-left: 15px ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: #fffbf9;
+}
+.profilecontainer h1{
+    margin-left: 20px;
+    font-weight: 500;
+
+}
+.profilecontainer b{
+    margin-left: 20px;
+}
+.profilecontainer p{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.mutualconnection{
+    
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.mutualconnection img{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.bat{
+    /* display: flex; */
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+.bat button{
+    border: 0px solid white;
+    border-radius: 3px;
+    padding: 8px 14px;
+    margin: 7px;
+
+
+}
+.bat img{
+    background: #e4e6eb;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.profiledescription{
+    background: #fffbf9;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+
+}
+.profiledescription h2{
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+.profiledescription a{
+    text-decoration: none;
+    float: right;
+}
+.profiledesc{
+    display: flex;
+    align-items: flex-start;
+  
+}
+.profiledesc img{
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 25px;
+    height: 50px;
+}
+.profiledesc h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.profiledesc b{
+    font-weight: 500;
+    display: block;
+    font-size: 15px;
+}
+.profiledesc p{
+    margin-top: 15px;
+}
+.profiledesc hr{
+    border: 0;
+    border-bottom: 1px solid #999;
+     margin-top: 10px;
+}
+.btnn{
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+.rightbb{
+    background: #fffbf9;
+    padding: 15px 25px;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.rightbb h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
+.people{
+    display: flex;
+    align-items: flex-start;
+    margin: 6px 0;
+}
+.people img{
+    margin-right: 9px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.people h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+.people button{
+    /* margin: 10px 0; */
+    padding: 5px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.profilefooter .copyright{
+    float: left;
+    margin-left: 6px;
+}
+
+#showmorelink{
+    display: none;
+
+}
+
+
+/* responsible----------------------------------------- */
+@media only screen and (max-width: 600px ){
+    .container{
+        padding: 15px 3%;
+    }
+    .leftside , .rightside{
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+    .center{
+        flex-basis: 100%;
+    }
+    .postactivity span{
+        display: none;
+    }
+    .postactivity img{
+        margin: 0px;
+    }
+    .profilesidebar, .profilemain{
+        flex-basis: 100%;
+    }
+    .profilecontainer{
+        font-size: 14px;
+    }
+    .profilepic{
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+    
+    }
+    .profiledescription{
+        font-size: 14px;
+    }
+    #showmorelink{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .activitysidebar{
+        display: none;
+    }
+    .activitysidebar.open-link{
+        display: block;
+    }
+}
+@media (min-width:600px) and (max-width:990px){
+   .container{
+    display: flex;
+    /* margin-left: -6px; */
+    /* padding: 0; */
+    /* margin-left: 1px; */
+    /* flex-direction: column; */
+   }
+   .leftside {
+    margin-left: -50px;
+    flex-basis: 28%;
+    position: sticky;
+    /* top: unset; */
+   }
+   .rightside {
+    /* border: 2px solid red; */
+    margin-right: -50px;
+    flex-basis: 28%;
+    position: sticky;
+    /* top: unset; */
+   }
+   .postactivity span{
+    display: none;
+}
+.postactivity img{
+    margin: 0px;
+}
+.profilecontainer{
+    font-size: 14px;
+}
+.profilemain{
+flex-basis: 70%;
+margin-left: -25px;
+}
+.profilesidebar{
+flex-basis: 20%;
+margin-right: -25px;
+}
+
+
+.profilepic{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+
+}
+.profiledescription{
+    font-size: 14px;
+}
+}

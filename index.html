@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+</head>
+<body>
+  
+
+  <!-- <div class="navbb"> -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        
+        <form class="d-flex" role="search">
+    <a href="index.html">
+      
+      <img src="linkd.png" id="lin " class="img"  alt="">
+    </a>     
+
+          <!-- <img src="search.png" class="img" alt="">  -->
+          <input class="  form-control me-2" id="search"  type="search" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </form>
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mx-auto  mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img class="img" src="home.png" alt=""><span>Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img" src="contact.png" alt=""><span>My contacts</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img"  src="jobs.png" alt=""> <span>jobs</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img" src="msg.png" alt=""><span>Messages</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="img" src="nt.jpg" alt=""> <span>Notifictions</span></a>
+              </li>
+              
+              
+              
+            </ul>
+            <div class="online">
+
+              <img src="me.jpg" class="img ms-auto mx-3" id="meri" alt="" onclick="togglemenu()">
+            </div>
+          </div>
+          <!-- <div>
+
+          </div> 
+     -->
+    </div>
+    <div class="profilemenuwrap" id="profilemenu">
+      <div class="profilemenu">
+        <div class="userinfo">
+          <img src="me.jpg" alt="">
+          <div>
+            <h3>Simran Goyal</h3>
+            <a href="profile.html">See your profile</a>
+          </div>
+        </div>
+        <hr>
+        <a href="" class="profilemenulink">
+          <img src="feedback.png" alt=""class="feed" >
+          <p>Give feedback</p>
+          
+          <span class="ss">></span>
+        </a>
+        <a href="" class="profilemenulink">
+          <img src="setting.jpg" alt=""class="feed" >
+          <p>Setting & Privacy</p>
+          
+          <span class="ss">></span>
+        </a>
+        <a href="" class="profilemenulink">
+          <img src="help.jpg" alt=""class="feed" >
+          <p>Help & Support</p>
+          
+          <span class="ss">></span>
+        </a>
+        <a href="" class="profilemenulink">
+          <img src="ac.jpg" alt=""class="feed" >
+          <p>Display & Accessibility</p>
+          
+          <span class="ss">></span>
+        </a>
+        <a href="" class="profilemenulink">
+          <img src="logout.jpg" alt=""class="feed" >
+          <p>Logout</p>
+          
+          <span class="ss">></span>
+        </a>
+      </div>
+    </div>
+    </nav>
+<!-- </div> -->
+      
+      
+      
+      <!-- ---------------------navbar close--------------------------------------------- -->
+      
+      <div class="container">
+        
+        <!-- left side------------------- -->
+        
+        <div class="leftside">
+          
+          <div class="profile-box">
+            <img src="me.jpg" width="100%" alt="">
+            <div class="profileinfo">
+              <img src="me.jpg" width="100%"  alt="">
+              <h1>Simran goyal</h1>
+              <h3>Full stack developer</h3>
+              <ul>
+                <li>Your post views<span>3</span></li>
+                <li>Your profile views <span>100</span></li>
+                <li>Your connections <span>500</span></li>
+                
+              </ul>
+            </div>
+             <div class="profile-link">
+               
+            <a href=""> <img src="newitem.jpg" class="item" alt="">My items </a>
+            <a href=""> <img src="premium.jpg" class="item" alt="">Try Premium </a>
+
+             </div>
+          </div>
+          <div class="activitysidebar" id="actside" >
+            <h3>RECENT</h3>
+            <a href=""><img src="u.png" class="items" alt="">  Web developer</a>
+            <a href=""><img src="u.png" class="items" alt="">  User Interface</a>
+            <a href=""><img src="u.png" class="items" alt="">  Online Learning</a>
+            <a href=""><img src="u.png" class="items" alt="">  Learn Online</a>
+            <a href=""><img src="u.png" class="items" alt="">  Code Better</a>
+            <a href=""><img src="u.png" class="items" alt="">  Group Learning</a>
+            <h3>GROUPS</h3>
+            <a href=""><img src="gpp.png" class="items"  alt="">Web Design Group</a>
+            <a href=""><img src="gpp.png"  class="items" alt="">HTML & CSS Learners</a>
+            <a href=""><img src="gpp.png" class="items"  alt="">Python & JavaScript Group</a>
+            <a href=""><img src="gpp.png"  class="items" alt="">Learn Coding Online</a>
+            <h3>HASHTAG</h3>
+            <a href=""><img src="has.png"  class="items" alt="">Web Development</a>
+            <a href=""><img src="has.png" class="items"  alt="">User Interface </a>
+            <a href=""><img src="has.png"  class="items" alt="">Online learning</a>
+            <div class="discover">
+              <a href="">Discover More</a>
+            </div>
+          </div >
+          <p id="showmorelink" onclick="toggleactivity()"  >Show More<b>+</b></p>
+        </div>
+        <!-- center------------------------------ -->
+        <div class="center">
+        
+          <div class="post">
+            <div class="createpost">
+              <img src="me.jpg" alt="">
+              <textarea name="" id="" cols="" rows="2" placeholder="Write a post"></textarea>
+            </div>
+
+            <div class="createlinks">
+            
+                <li><img src="photo.jpg" alt="">Photo</li>
+                <li><img src="viedo.jpg" alt="">Viedo</li>
+                <li><img src="even.png" class="eve" alt="">Events</li>
+                <li>post</li>
+              
+            </div>
+
+            <div class="sortby">
+              <hr>
+              <p>Sort by: <span>top<img src="arrow.jpg" alt=""></span></p>
+            </div>
+          </div>
+          <div class="pp">
+            <div class="postauthor">
+              <img src="benja.jpg" alt="">
+              <div>
+                <h1>Franklin Lesh</h1>
+                <small>Founder and CEO at nasika group | Angel Investor</small>
+                <small>5 hours ago</small>
+
+              </div>
+
+            </div>
+            <p>Search Engine Optimization (SEO) and digital marketing strategies are indeed crucial factors that can significantly influence the success of a website. However, it's important to note that while they play a significant role, they are not the only factors that determine a website's success. Other elements, such as the quality of content, user experience, website design, branding, and the value the website provides to its audience, also contribute to its overall success. </p>
+           <img src="note.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Hemalata and 90 others</span>
+            </div>
+
+            <div >
+              <span>12 Comments &middot; 20 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="myy.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+
+
+          <!-- ---------------------------------------------------2ndpost---------- -->
+          <!-- <div class="post">
+            <div class="createpost">
+              <img src="myy.jpg" alt="">
+              <textarea name="" id="" cols="" rows="2" placeholder="Write a post"></textarea>
+            </div>
+
+            <div class="createlinks">
+            
+                <li><img src="photo.jpg" alt="">Photo</li>
+                <li><img src="viedo.jpg" alt="">Viedo</li>
+                <li><img src="even.png" class="eve" alt="">Events</li>
+                <li>post</li>
+              
+            </div>
+
+            <div class="sortby">
+              <hr>
+              <p>Sort by: <span>top<img src="arrow.jpg" alt=""></span></p>
+            </div>
+          </div> -->
+          <div class="pp">
+            <div class="postauthor">
+              <img src="ab.jpg" alt="">
+              <div>
+                <h1>Charle vedi</h1>
+                <small>Digital Marketor</small>
+                <small>2 hours ago</small>
+
+              </div>
+
+            </div>
+            <p>A digital marketer is responsible for creating, implementing, and managing online marketing strategies to promote products or services. They analyze data to optimize campaigns, engage with target audiences across various digital platforms, and drive brand awareness, lead generation, and sales. Through SEO, social media, email, and content marketing, they enhance online presence and achieve business goals.
+
+
+
+
+            </p>
+           <img src="fff.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Naveen and 88 others</span>
+            </div>
+
+            <div >
+              <span>12 Comments &middot; 20 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+              <!-- /////////////////////////////////////////////////////////// -->
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+          <!-- --------------------------------3rd----------------------- -->
+          
+         
+          <div class="pp">
+            <div class="postauthor">
+              <img src="abc.jpg" alt="">
+              <div>
+                <h1>Vandna Rathi</h1>
+                <small>React Developer | Mern Stack</small>
+                <small>2 hours ago</small>
+
+              </div>
+
+            </div>
+            <p>
+              A React developer specializes in building dynamic and interactive user interfaces for web applications using the React JavaScript library. They create reusable components, manage state efficiently, and ensure seamless data flow to deliver responsive and engaging user experiences. Collaborating with designers and backend developers, they contribute to the front-end development process. </p>
+           <img src="im.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Bhavesh and 13 others</span>
+            </div>
+
+            <div >
+              <span>12 Comments &middot; 20 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+          <!-- ------------------------------------------------------4th -->
+             
+          <div class="pp">
+            <div class="postauthor">
+              <img src="abcd.jpg" alt="">
+              <div>
+                <h1>Yashika mehra</h1>
+                <small>Founder and CEO of Product management</small>
+                <small>2 hours ago</small>
+
+              </div>
+
+            </div>
+            <p>Product management involves identifying market opportunities, defining product strategies, and overseeing the development, launch, and continuous improvement of products. Product managers collaborate with cross-functional teams, gather customer feedback, prioritize features, and align the product roadmap with business goals to deliver valuable and successful products to the market.</p>
+           <img src="as.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Vijay and 67 others</span>
+            </div>
+
+            <div >
+              <span>12 Comments &middot; 20 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+          <!-- -----------------------------------------5th--------------------
+          -->
+
+             
+          <div class="pp">
+            <div class="postauthor">
+              <img src="bo.jpg" alt="">
+              <div>
+                <h1>Aman Gupta</h1>
+                <small>Data Scientist | Machine Learning</small>
+                <small>1 day ago</small>
+
+              </div>
+
+            </div>
+            <p> A data scientist specializing in machine learning analyzes large datasets to extract insights and patterns, leveraging statistical techniques and advanced algorithms. They develop predictive models and deploy machine learning solutions to automate decision-making processes and solve complex business problems. Continuously iterating and improving models, they bridge the gap between data analysis and actionable insights.</p>
+           <img src="da.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Tammana and 56 others</span>
+            </div>
+
+            <div >
+              <span>19 Comments &middot; 32 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+          <!-- -------------------------------------------------6th---------------- -->
+             
+          <div class="pp">
+            <div class="postauthor">
+              <img src="boy.jpg" alt="">
+              <div>
+                <h1>Vinay Metha</h1>
+                <small>Data Analyst</small>
+                <small>10 hours ago</small>
+
+              </div>
+
+            </div>
+            <p>Data analysts interpret and transform data into meaningful insights, helping businesses make informed decisions and optimize processes based on their findings. </p>
+           <img src="dt.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Metha and 9 others</span>
+            </div>
+
+            <div >
+              <span>20 Comments &middot; 2 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+            <!-- ----------------------------------------------------------7th -->
+          
+
+          <div class="pp">
+            <div class="postauthor">
+              <img src="bi.jpg" alt="">
+              <div>
+                <h1>Raman Gada</h1>
+                <small>Head of Affiliate Marketing</small>
+                <small>2 day ago</small>
+
+              </div>
+
+            </div>
+            <p>Affiliate marketing involves promoting products or services through unique referral links. Affiliates earn commissions for driving traffic or sales to the merchant's site, leveraging their online platforms and networks to generate revenue.</p>
+           <img src="afo.jpg" width="100%" alt="">
+
+           <div class="status">
+            <div>
+
+              <img src="green.jpg" alt="">
+              <img src="heart.jpg" alt="">
+              <img src="clap.jpg" alt="">
+              <span class="likedby">Mishra and 99 others</span>
+            </div>
+
+            <div >
+              <span>2 Comments &middot; 34 shares</span>
+            </div>
+
+          </div>
+          <div class="postactivity">
+
+            <div>
+              <img src="me.jpg" class="activityicon" alt="">
+              <img src="arrow.jpg" class="activityarrowicon" alt="">
+          </div>
+          <div class="linksicon">
+            <img src="heart.jpg" alt="">
+            <span>Like</span>
+          </div>
+          <div class="linksicon">
+            <img src="com.jpg" alt="">
+            <span>comments</span>
+          </div>
+          <div class="linksicon">
+            <img src="share.jpg" alt="">
+            <span>share</span>
+          </div>
+          <div class="linksicon">
+            <img src="send.jpg" alt="">
+            <span>send</span>
+          </div>
+        </div>
+
+
+          </div>
+
+
+
+        </div>
+        <!-- right-------------------------------------------------------- -->
+        <div class="rightside">
+          <div class="rightsidenews">
+            <img src="warn.png" class="info-icon" alt="">
+            <h1>Trending News</h1>
+            <a href="">High demand for skilled manpower</a>
+              <span> 1d ago &middot; 10,934 readers</span>
+              <a href=""> Carrers growing horitzontally too</a>
+              <span>19h ago & middot; 19,932 readers</span>
+              <a href="">Less work visa for us,more for uk</a>
+              <span>1d ago &middot; 2,345 readers </span>
+              <a href="">More hiring=hiring confidence?</a>
+              <span>18h ago &middot; 12,111 readers</span>
+              <a href="">Gautam Adani is the world's third reachest</a>
+              <span>12h ago &middot; 12,456 readers</span>
+          <a href="#" class="read-more">Read More</a>
+          </div>
+
+          <div class="rightad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the 5 principle of web design</p>
+            <div>
+              <img src="me.jpg" alt="">
+              <img src="mi.png" alt="">
+
+            </div>
+            <b>Brand and Demand in Xiamoi </b>
+            <br>
+            <a href="" class="learn-More"><button>Learn-More</button> </a>
+          </div>
+
+          <div class="rightsidelinks">
+            <a href="">About</a>
+            <a href="">Acessibility</a>
+            <a href="">Help Center</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Advertising</a>
+            <a href="">Get the App</a>
+            
+            <a href="">More</a>
+
+          </div>
+          <div class="copyright">
+            <img src="linkd.png" alt="">
+            <p>linkedup &#169; 2022. All rights reserved</p>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+<script>
+  let profilemenu=document.getElementById("profilemenu");
+  function togglemenu(){
+    profilemenu.classList.toggle("open-menu")     
+  }
+  let sideactivity = document.getElementById("actside");
+  let morelink= document.getElementById("showmorelink");
+  function toggleactivity(){ 
+    sideactivity.classList.toggle("open-link");
+    if(sideactivity.classList.contains("open-link")){
+      morelink.innerHTML= "Show less <b>-</b>"
+    }
+    else{
+      morelink.innerHTML= "Show More <b>+</b>"
+    }
+
+  }
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
